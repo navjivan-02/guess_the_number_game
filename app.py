@@ -31,4 +31,5 @@ if st.button("Restart Game"):
     st.session_state.computer_number = random.randint(1, 100)
     st.session_state.guess_count = 0
     st.session_state.game_over = False
-    st.experimental_rerun()
+    st.success("Game restarted! 🎯 Start guessing again.")
+    st.stop()
